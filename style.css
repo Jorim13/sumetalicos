@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.topbar {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 80px; /* para que el header no tape el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.nosotros {
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contenido-nosotros {
+  max-width: 800px;
+}
+
+.nosotros h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+/* Cards misión/visión */
+.cards-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 390px); /* 2 columnas iguales */
+  gap: 3.5rem;
+  margin-top: 1rem;
+}
+.card {
+  background:#d7d7d7;
+  border:1px solid #e0e0e0;
+  padding:1rem;
+  border-radius:8px;
+  text-align:center;
+}
+
+.productos {
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+.contenido-productos {
+  max-width: 800px;
+}
+.productos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.productos p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.contenido-productos {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+.contenido-productos .cards-2col {
+  display: grid;
+  grid-template-columns: repeat(4, 200px); /* 2 columnas iguales */
+  justify-content: center; 
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.contenido-productos a.card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ccc;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.2s ease;
+}
+.contenido-productos a.card:hover {
+  transform: scale(1.05);
+}
+
+.pagos {
+   min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.pagos-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.pagos-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pagos-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.pagos-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.pagos-list li {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #1ea955;
+}
+
+
+.contacto {
+  min-height: 100vh;
+  padding-top: 80px; /* para que el header no tape el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  text-align: center;
+}
+
+.contacto-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+#whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .contacto-wrapper {
+    flex-direction: column;
+  }
+}
